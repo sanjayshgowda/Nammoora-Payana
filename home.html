@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ನಮ್ಮೂರ ಪಯಣ </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CSS-only Responsive Layout with Smooth Transitions" />
+  <meta name="keywords" content="css3, transitions, animations, css-only, navigation, smooth scrolling, full width, full height, window width, window height" />
+  <meta name="author" content="Codrops" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/car.css" />
+  <link rel="stylesheet" href="css/work.css">
+  <link rel="stylesheet" href="css/search.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="js/functions-min.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" type="text/css" href="css/simple.css" />
+  <![endif]-->
+  <style>
+  <style>
+    #searchbox{
+   width: 450px;
+   height: 300px;
+ }
+    #container
+    {
+      background-color:#f7ebeb;
+      width:320px;
+      padding:10px 15px;
+      display:none;
+     
+    }
+    .itemdiv.hover
+    {
+      background-color: green;
+    }
+    .itemdiv
+    {
+      background-color: white;
+      border: 1px solid black;
+      width: 200px;
+    }
+  body{
+    font-family: Georgia, serif;
+    background: #ddd;
+    font-weight: 400;
+    font-size: 15px;
+    color: yellow;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  a{
+    color: #555;
+    text-decoration: none;
+  }
+  .clr{
+    clear: both;
+    padding: 0;
+    height: 0;
+    margin: 0;
+  }
+  /* Header Style */
+  .codrops-top{
+    line-height: 24px;
+    font-size: 9px;
+    text-transform: uppercase;
+    z-index: 9999;
+    position: relative;
+    font-family: Cambria, Georgia, serif;
+  }
+  .codrops-top a{
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    color: #888;
+    display: inline-block;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+  }
+  .codrops-top span.right{
+    float: right;
+  }
+  .codrops-top span.right a{
+    float: left;
+    display: block;
+  }
+  @media screen and (max-width: 520px) {
+    .codrops-top { display: none; }
+  }
+  .st-panel p {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-family: serif;
+    line-height: 22px;
+    color: #e23a6e;
+    z-index: 2;
+    padding: 0;
+    width: 90%;
+    left: 5%;
+    top: 30%;
+    margin: 10px 0 0 0;
+    -webkit-backface-visibility: hidden;
+  }
+  .st-panel p {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-family: serif;
+    line-height: 22px;
+    color: #e23a6e;
+    z-index: 2;
+    padding: 0;
+    width: 90%;
+    left: 5%;
+    top: 30%;
+    margin: 10px 0 0 0;
+    -webkit-backface-visibility: hidden;
+  }
+  .st-panel h2 {
+    color: #c8560e;
+    text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+    position: absolute;
+    font-size: 54px;
+    font-weight: 900;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    line-height: 50px;
+    margin: -70px 0 0 0;
+    padding: 0;
+    top: 34%;
+    -webkit-backface-v
+    isibility: hidden;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="st-container">
+      <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+      <a href="#st-panel-1">Home</a>
+      <input type="radio" name="radio-set" id="st-control-2"/>
+      <a href="#st-panel-2">About</a>
+      <input type="radio" name="radio-set" id="st-control-3"/>
+      <a href="#st-panel-3">Districts</a>
+      <input type="radio" name="radio-set" id="st-control-4"/>
+      <a href="#st-panel-4">Feedback</a>
+      <input type="radio" name="radio-set" id="st-control-5"/>
+      <a href="#st-panel-5">Search</a>
+      <div class="st-scroll">
+        <section class="st-panel" id="st-panel-1">
+          <div class="st-deco"  data-icon="H" img src="images/nammalogo.png"></div>
+          <h2>KARNATAKA</h2>
+          <p> Natives of the malnad Karnataka, the Hoysalas established the Hoysala Empire at the turn of the first millennium. Art and architecture flourished in the region during this time resulting in distinctive Kannada literary metres and the construction of temples and sculptures adhering to the Vesara style of architecture. The expansion of the Hoysala Empire brought large parts of modern Andhra Pradesh and Tamil Nadu under their rule.
+
+            In the early 14th century, the Vijayanagara Empire with its capital at Hosapattana (later to be called Vijayanagara) rose to successfully challenge the Muslim invasions into the South. This empire was established by Harihara I and Bukka Raya who many historians claim were commanders of the last Hoysala King Veera Ballala III and the empire prospered for over two centuries. The Bahmani sultans of Bidar were the main competitors to the Vijayanagara empire for hegemony over the Deccan and after their fall, the Bijapur Sultanate took their place in the dynastic struggle for control of the southern India. After the defeat and disintegration of the Vijayanagara Empire in battle at Talikota in 1565 to a confederacy of Sultanates, the Bijapur Sultanate rose as the main power in the Deccan before their defeat to the Mogul Empire in late 17th century. The Bahamani and Bijapur rulers encouraged Urdu and Persian literature and Indo Saracenic architecture, the Gol Gumbaz being one of the high points of this contribution. Parts of Karnataka were conquered by Marathas, earlier under Chhatrapati Shivaji and later on after the War of 27 years.
+
+            The Wodeyars of Mysore, former vassals of the Vijayanagara Empire, leased the state from the Mughal king Aurangzeb in the 15th century. With the death of Krishnaraja Wodeyar II, Haider Ali, the Commander-in-Chief of the Mysore Army, onloadedmetadata, assumed control over the region, until the rule of the kingdom was passed to Tipu Sultan, after Haider Ali's death. In attempting to contain European expansion in South India, Tipu Sultan, known as the Tiger of Mysore fought four significant Anglo-Mysore Wars, the last of which resulted in his death and the incorporation of Mysore into the British Raj.
+
+            After Indian independence, the Wodeyar Maharaja acceded to India. In 1950, Mysore became an Indian state, and the former Maharaja became its rajpramukh, or governor, until 1975. The Ekikarana movement which started in the later half of the 20th century, culminated in the States Reorganisation Act of 1956 which provided for parts of Coorg, Madras, Hyderabad, and Bombay states to be incorporated into the state of Mysore. Mysore state was renamed Karnataka in 1973. The state of Mysore was formed on November 1, 1956 and since then November 1 of every year is celebrated as Kannada Rajyotsava / Karnataka Rajyotsava. </p>
+          </section>
+
+          <section class="st-panel st-color" id="st-panel-2">
+            <div class="st-deco" data-icon="A"></div>
+            <h2>About Nammoora Payana</h2><br> <br> <br>
+            <p>  Karnataka is a tapestry of colors, cultures, flavors, landscapes, timelessness and heart stopping beauty. It’s a
+              place where vibrant worlds seamlessly meld into one another every few hundred kilometer. Sedate plains suddenly rise
+              to dizzying mist covered hilly heights, and then plunge with careless abandon in a white-watered freefall to become
+              languid rivers that flow past cities where time has stopped altogether. And cities where time rushes a relentless rush
+              to keep up with the world, cities that sometimes escape into the deep quietude of thick forests and sometimes, stretches
+              their arms wide open to embrace the sea. Host to some of India's largest and most powerful dynasties, the state has across
+              the centuries, carried a legacy of art and culture. Its geography - making it, by all means, a 191,791-square kilometer trail of whimsy.
+              Many people don’t know the beautiful places Located in our Karnataka. People miss out the small places which gives a lot of joy.
+
+              <br>
+              <br>
+
+              The purpose of this application is to know the places that are present in Karnataka which are not so famous,
+              and to find out the distance between two places and to suggest the nearby visit able places.
+            </p>
+          </section>
+
+            <section class="st-panel" id="st-panel-3">
+              <div class="st-deco" data-icon="D"></div>
+              <div id="sb-container" class="sb-container">
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\bagalkote\bagalkote.html"><h5><span>Bagalkote</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\ballari\ballari.html"><h5><span>Bellary</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\bangalore\bangalore.html"><h5><span>Bangalore</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\belgaum\belgaum.html"><h5><span>Belgaum</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\bidar district\bidar.html"><h5><span>Bidar</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\bijapura\bijapur.html"><h5><span>Bijapur</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\chamarajanagar\chamrajanagar.html"><h5><span>Chamrajanagar</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="places\chikabalapura\chikkabalapura.html"><h5><span>Chikballapur</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\Chikamagaluru\chikmagaluru.html"><h5><span>Chikmagalur</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\Dakshina kannada\dakshin kannad.html"><h5><span>Dakshina Kannad</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\gadag\gadag.html"><h5><span>Gadag</span></h5></a>
+                </div>
+
+                <div><span class="sb-icon "></span>
+                  <a href="Places\hasan\hasan.html"><h5><span>Hasan</span></h5></a>
+                </div>
+
+                <div><span class="sb-icon "></span>
+                  <a href="Places\haveri\haveri.html"><h5><span>Haveri</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\kodagu\kodagu.html"><h5><span>kodagu</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\kolar\kolar.html"><h5><span>Kolara</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\mandya\mandya.html"><h5><span>Mandya</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\mysor\mysor.html"><h5><span>Mysore</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\shivmogga\shivmogga.html"><h5><span>Shivmogga</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\tumukuru\tumukuru.html"><h5><span>Tumukur</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\udupi\udupi.html"><h5><span>Udupi</span></h5></a>
+                </div>
+
+                <div>
+                  <span class="sb-icon "></span>
+                  <a href="Places\uttar kannad\uttar kannad.html"><h5><span>Uttar Kannad</span></h5></a>
+                </div>
+
+                <div>
+                  <a href="category1.html"><h5><span>Places</span></h5></a>
+                  <h5><span>We &hearts; Travel</span></h5>
+                </div>
+
+              </div>
+            </section>
+
+            
+           <section class="st-panel" id="st-panel-4">
+              <div class="st-deco" data-icon="F"></div>
+            <h2 style="top:250px">Thanks for visiting our page <br>Click here to Give Feedback</h2>
+              <div class="country-wrap carbody">
+              <a href="feedback.html"><div class="sun"></div></a>
+                <div class="grass"></div>
+                <div class="street">
+                  <div class="car">
+                    <div class="car-body">
+                      <div class="car-top-back">
+                        <div class="back-curve"></div>
+                      </div>
+                      <div class="car-gate"></div>
+                      <div class="car-top-front">
+                        <div class="wind-sheild"></div>
+                      </div>
+                      <div class="bonet-front"></div>
+                      <div class="stepney"></div>
+                    </div>
+                    <div class="boundary-tyre-cover">
+                      <div class="boundary-tyre-cover-back-bottom"></div>
+                      <div class="boundary-tyre-cover-inner"></div>
+                    </div>
+                    <div class="tyre-cover-front">
+                      <div class="boundary-tyre-cover-inner-front"></div>
+                    </div>
+                    <div class="base-axcel">
+
+                    </div>
+                    <div class="front-bumper"></div>
+                    <div class="tyre">
+                      <div class="gap"></div>
+                    </div>
+                    <div class="tyre front">
+                      <div class="gap"></div>
+                    </div>
+                    <div class="car-shadow"></div>
+                  </div>
+                </div>
+                <div class="street-stripe"></div>
+                <div class="hill">
+                </div>
+
+              </div>
+            </section>
+            <section class="st-panel" id="st-panel-5">
+              <div class="st-deco" data-icon="S"></div>
+               <link rel="stylesheet" href="css/search.css">
+                <div id="searchbox">
+                   <form id="spage" method="post">
+                      <center><h1>Search</h1>
+
+                         <input name="name" type="text" id="search" class="searchinput" placeholder="Name" onkeypress="obj.getTerm()"/><a id="sear" href="">
+                         <div id="container" class="searchresult"></div></a>
+                         
+                         </center>
+
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+</div>
+</div>
+<span><a href="home.html"><img src="images/nammalogo.png" style="top:0;left:0;height: 120px;width: 150px;position: absolute;"/></a></span>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+<script type="text/javascript">
+$(function() {
+
+  $( '#sb-container' ).swatchbook();
+
+});
+$(function() {
+
+  $( '#sb-container1' ).swatchbook();
+
+});
+
+
+    function Suggest()
+    {
+      this.xhr=new XMLHttpRequest();
+      tempObj=this;
+      this.search=null;
+      this.timer=null;
+      this.getTerm=function()
+          {
+        if(tempObj.timer)
+              {
+          clearTimeout(tempObj.timer)
+                  }
+      tempObj.timer=setTimeout(tempObj.sendTerm,1000);
+         }
+      this.sendTerm=function()
+          {
+        tempObj.search=document.getElementById("search");
+        /*if(localStorage.getItem(tempObj.search.value)!="")
+        {
+          tempObj.populateFood()
+        }
+        else
+        {*/
+          tempObj.xhr.onreadystatechange=tempObj.displayResults;
+          tempObj.xhr.open("GET","suggest.php?term="+tempObj.search.value,true);
+          tempObj.xhr.send();
+        //}
+         }
+      this.displayResults=function(){
+        if(this.readyState==4&& tempObj.xhr.status==200)
+        {
+          var res=this.response;
+          var resjson=JSON.parse(res);
+          if(resjson.length==0)
+          {
+            tempObj.search.value="No results found"
+            tempObj.search.style.backgroundColor="red";
+          }
+          else
+          {
+            tempObj.populateFood(resjson);
+            localStorage.setItem(tempObj.search.value,resjson)
+          }
+        }
+      }
+      this.populateFood=function(items)
+      {
+        for(var i=0;i<items.length;i++)
+        { 
+           var item=items[i];
+           var name=JSON.stringify(item.name);
+           name=name.replace(/\"/g, "");
+           console.log(name);
+           
+           var link=JSON.stringify(item.link);
+           link=link.replace(/\"/g, "");
+           link=link.replace(/\/\//g, "");
+           console.log(link);
+           var a = document.createElement('a');  
+
+           var itemdiv=document.createElement("div");
+           itemdiv.innerHTML=name;
+           a1=container.appendChild(itemdiv);
+                // Append the text node to anchor element. 
+                //sear.appendChild(a1);  
+                  
+                  
+                // Set the href property. 
+                sear.href = link;  
+                  
+                // Append the anchor element to the body. 
+                container.appendChild(a);  
+
+
+
+
+        }
+        container.style.display="block"
+      }
+    }
+    var obj=new Suggest();
+
+
+</script>
+
+
+</body>
+</html>
